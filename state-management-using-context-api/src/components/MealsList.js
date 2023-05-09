@@ -1,5 +1,8 @@
+import { useMealsListContext } from "../providers/MealsProvider";
+
 const MealsList = () => {
-    const meals = ['Meal-1', 'Meal-2', 'Meal-3'];
+    const { meals } = useMealsListContext();
+    
     return (
         <div>
             <h1>Meals List using Context API</h1>
